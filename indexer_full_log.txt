@@ -1,0 +1,39 @@
+================================================================================
+BIOSTATISTICS RAG - LIGHTWEIGHT INDEXER
+================================================================================
+
+[1/5] Setting up paths...
+   OK
+
+[2/5] Importing dependencies...
+   OK
+
+[3/5] Loading configuration...
+[Biostatistics RAG Configuration]
+   Project root: D:\Repositories\Biostatistics
+   Textbooks: D:\Repositories\Biostatistics\textbooks
+   ChromaDB: D:\Repositories\Biostatistics\rag_system\chroma_db
+   Collection: biostatistics_main
+   Primary model: BAAI/bge-m3
+   Secondary model: nomic-ai/nomic-embed-text-v1.5
+OK: Biostatistics RAG config validated
+   Collection: biostatistics_main
+   PDFs: D:\Repositories\Biostatistics\textbooks
+   Model: BAAI/bge-m3
+
+[4/5] Initializing ChromaDB...
+   - Deleted existing collection
+   OK: Collection ready
+
+[5/5] Loading BGE-M3 model...
+   Model should be cached from previous indexing
+   Loading...
+[*] Loading BGE-M3 model: BAAI/bge-m3
+   This may take a few minutes on first run...
+[OK] BGE-M3 loaded successfully (dimension: 1024)
+   OK: Model loaded
+
+Found 45 PDFs
+WARNING: This will take 1-2 hours for 45 PDFs
+
+[1/45] A Clinician's Guide to Statistics in Mental Health

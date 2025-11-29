@@ -1,0 +1,94 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+        "python.terminal.activateEnvironment": true,
+        "python.analysis.extraPaths": [
+            "${workspaceFolder}/rag_system"
+        ],
+        "files.exclude": {
+            "**/__pycache__": true,
+            "**/*.pyc": true,
+            ".venv": false
+        },
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black",
+        "windowColor.mainColor": "#4de0d6",
+        "window.title": "d:\\Repositories\\Biostatistics\\biostatistics-rag.code-workspace",
+        "workbench.colorCustomizations": {
+            "statusBarItem.warningBackground": "#4de0d6",
+            "statusBarItem.warningForeground": "#000000",
+            "statusBarItem.warningHoverBackground": "#4de0d6",
+            "statusBarItem.warningHoverForeground": "#00000090",
+            "statusBarItem.remoteBackground": "#5aede3",
+            "statusBarItem.remoteForeground": "#000000",
+            "statusBarItem.remoteHoverBackground": "#67faf0",
+            "statusBarItem.remoteHoverForeground": "#00000090",
+            "statusBar.background": "#4de0d6",
+            "statusBar.foreground": "#000000",
+            "statusBar.border": "#4de0d6",
+            "statusBar.debuggingBackground": "#4de0d6",
+            "statusBar.debuggingForeground": "#000000",
+            "statusBar.debuggingBorder": "#4de0d6",
+            "statusBar.noFolderBackground": "#4de0d6",
+            "statusBar.noFolderForeground": "#000000",
+            "statusBar.noFolderBorder": "#4de0d6",
+            "statusBar.prominentBackground": "#4de0d6",
+            "statusBar.prominentForeground": "#000000",
+            "statusBar.prominentHoverBackground": "#4de0d6",
+            "statusBar.prominentHoverForeground": "#00000090",
+            "focusBorder": "#4de0d699",
+            "progressBar.background": "#4de0d6",
+            "textLink.foreground": "#8dffff",
+            "textLink.activeForeground": "#9affff",
+            "selection.background": "#40d3c9",
+            "list.highlightForeground": "#4de0d6",
+            "list.focusAndSelectionOutline": "#4de0d699",
+            "button.background": "#4de0d6",
+            "button.foreground": "#000000",
+            "button.hoverBackground": "#5aede3",
+            "tab.activeBorderTop": "#5aede3",
+            "pickerGroup.foreground": "#5aede3",
+            "list.activeSelectionBackground": "#4de0d64d",
+            "panelTitle.activeBorder": "#5aede3",
+            "activityBar.activeBorder": "#4de0d6",
+            "activityBarBadge.foreground": "#000000",
+            "activityBarBadge.background": "#4de0d6"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "GitHub.copilot",
+            "ms-python.black-formatter"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Start API Server",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/api_server.py",
+                "console": "integratedTerminal",
+                "justMyCode": false
+            },
+            {
+                "name": "Run Indexer",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/rag_system/indexers/run_indexer_lightweight.py",
+                "console": "integratedTerminal",
+                "justMyCode": false
+            }
+        ]
+    }
+}

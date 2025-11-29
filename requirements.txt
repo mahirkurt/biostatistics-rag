@@ -1,0 +1,27 @@
+# Biostatistics RAG - Dependencies
+
+# Core
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+# RAG Components
+chromadb>=0.5.23  # Latest version with encoding fix
+sentence-transformers>=2.2.2
+torch>=2.1.0
+transformers>=4.36.0
+
+# Alternative: Qdrant (uncomment if ChromaDB issues persist)
+# qdrant-client>=1.7.0
+
+# PDF Processing
+PyPDF2>=3.0.0
+PyMuPDF>=1.24.0  # Better PDF text extraction
+
+# LLM
+anthropic>=0.18.0
+
+# Utilities
+numpy>=1.24.0
+requests>=2.31.0
