@@ -12,9 +12,6 @@ env/
 # ChromaDB
 rag_system/chroma_db/
 
-# Textbooks - Too large for GitHub (use Git LFS or download separately)
-textbooks/
-
 # Environment & Secrets
 .env
 .env.local
